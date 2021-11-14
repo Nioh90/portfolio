@@ -1,0 +1,308 @@
+:root {
+  --transition: all 0.3s linear;
+}
+body {
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+button {
+  font-weight: 700 !important;
+  border-width: 3px !important;
+  border-radius: 15px !important;
+}
+.color-section {
+  background-color: #292929;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  width: 95vw;
+  margin: auto;
+  margin-bottom: 2.5%;
+}
+@media (max-width: 576px) {
+  .color-section {
+    width: 100vw;
+  }
+}
+.k-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.navbar {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.nav-item {
+  padding: 0 9px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .nav-item {
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-left: 20px;
+    transition: var(--transition);
+  }
+  .nav-link {
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  .nav-item:hover {
+    background: white;
+  }
+  .nav-item:hover .nav-link {
+    color: black !important;
+  }
+}
+#title {
+  background: url("../images/cyberpunk.gif") center/cover fixed no-repeat;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#title h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+#title p {
+  font-size: 2rem;
+  font-weight: 200;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#title a {
+  font-weight: 700 !important;
+  border-width: 3px !important;
+  border-radius: 15px !important;
+}
+#about {
+  padding: 5%;
+}
+#about img {
+  margin: 20% 0;
+  max-height: 400px;
+  background: black;
+  border-radius: 20px;
+  border: 3px solid black;
+  float: right;
+}
+
+@media (max-width: 992px) {
+  #about img {
+    float: none;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#about a {
+  margin-right: 10px;
+  font-weight: 700 !important;
+  border-width: 3px !important;
+  border-radius: 15px !important;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.col-lg-8 p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 70%;
+}
+
+#skills {
+  padding: 5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/neo-tokyo.jpeg") center/cover fixed no-repeat;
+}
+#skills p {
+  font-size: 1.5rem;
+  padding: 0.5%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#skills img {
+  padding: 10%;
+  max-height: 50%;
+}
+.skill-card {
+  margin-top: 2rem;
+
+  color: black;
+}
+#skills .card {
+  opacity: 0.8;
+  transition: var(--transition);
+}
+#skills .card:hover {
+  opacity: 1;
+}
+.skill-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .col-lg-8 p {
+    width: 100%;
+  }
+  .skill-card {
+    max-width: 50%;
+  }
+  .skill-banner {
+    text-align: center;
+  }
+}
+#projects {
+  padding: 5%;
+}
+#projects .card {
+  margin-right: 2rem;
+}
+#projects-info {
+  margin-top: 2rem;
+}
+.btn-close-white {
+  transform: scale(2);
+  margin-right: 1rem;
+}
+.btn-close {
+  transform: scale(2);
+  margin-right: 1rem !important;
+}
+.stat-tracker .modal-content {
+  color: white;
+  background-color: #3c1414;
+}
+.portfolio a {
+  text-decoration: none;
+  color: white;
+}
+.modal-body {
+  padding: 0;
+}
+.modal-dialog {
+  min-width: 90vw !important;
+}
+.modal-title {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+}
+.media img {
+  width: 100%;
+  max-width: 1400px;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+.media p {
+  margin-top: 1rem;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.modal-para {
+  margin-top: 3rem;
+  width: 55%;
+  margin-left: 2rem;
+}
+.modal-para h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: underline;
+}
+.modal-para p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+.stat-tracker .modal-para p {
+  border: 2px solid white;
+}
+.portfolio .modal-para p {
+  border: 2px solid black;
+}
+.modal-para b {
+  font-weight: 800;
+}
+
+@media (max-width: 992px) {
+  .modal-para {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  #projects .card {
+    margin-right: 0;
+  }
+  #projects .skill-card {
+    margin-right: 0;
+    max-width: 100% !important;
+  }
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  .modal-para {
+    margin-left: 0.5rem;
+  }
+  .modal-para h1 {
+    font-size: 1rem;
+  }
+  .modal-para p {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+}
+#contact {
+  margin-top: 5rem;
+  background-color: black;
+  padding: 5%;
+  font-size: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/synth.gif") center/cover fixed no-repeat;
+}
+.message {
+  font-size: 0.8rem;
+  text-align: center;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#contact p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+#email {
+  color: rgb(255, 159, 80);
+}
+#footer {
+  background: black;
+  text-align: center;
+  padding: 2%;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+.social-icon {
+  margin: 30px;
+  margin-bottom: 50px;
+  transform: scale(2);
+}

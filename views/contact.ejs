@@ -1,0 +1,55 @@
+<!-- Contact -->
+<div class="container-fluid" id="contact">
+  <h2>Contact Me</h2>
+  <p class="message"><%=warning%></p>
+  <form action="/" id="cpa-form" method="POST">
+    <div class="row">
+      <div class="mb-3 col-md-6">
+        <label for="exampleFormControlInput1" class="form-label"
+          >First Name</label
+        >
+        <input
+          name="fName"
+          type="text"
+          class="form-control form-control-lg"
+          autocomplete="cc-name"
+          id="exampleFormControlInput1"
+          placeholder="First Name"
+        />
+      </div>
+      <div class="mb-3 col-md-6">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Email address *</label
+        >
+        <input
+          name="email"
+          type="email"
+          class="form-control form-control-lg"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+          required
+        />
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Your Message *</label
+      >
+      <textarea
+        name="message"
+        class="form-control form-control-lg"
+        id="exampleFormControlTextarea1"
+        placeholder="Your message here..."
+        rows="5"
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-outline-light">
+      Send your message!
+    </button>
+  </form>
+  <p>
+    Alternatively, send an email to
+    <span id="email">paulkunal83@gmail.com</span>
+  </p>
+</div>
